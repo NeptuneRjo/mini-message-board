@@ -5,8 +5,7 @@
 		<link rel="stylesheet" href="/stylesheets/style.css" />
 	</head>
 	<body>
-		<h1><%= title %></h1>
-		<p>Welcome to <%= title %></p>
+		<%- include('./partials/nav.ejs') %> 
 		<form method="POST" action="/new">
 			<input placeholder="message" name="messageText" id="messageText" />
 			<input placeholder="user" name="messageUser" id="messageUser" />
