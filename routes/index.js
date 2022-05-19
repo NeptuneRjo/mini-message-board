@@ -21,10 +21,11 @@ router.get('/', function (req, res, next) {
 
 router.post('/new', (req, res) => {
 	messages.push({
-		title: req.body.messageText,
+		text: req.body.messageText,
 		user: req.body.messageUser,
 		added: new Date(),
 	})
+	res.redirect('/')
 })
 
 module.exports = router
