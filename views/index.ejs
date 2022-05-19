@@ -5,12 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <%- include('./partials/nav.ejs') %> 
     <% if (messages.length !== 0) { %>
       <% messages.forEach((message) => { %>  
-        <h4><%= message.text %></h4>
-        <p><%= message.user %> </p>
+        <h4 class='title'><%= message.text %></h4>
+        <p class='user'><%= message.user %> </p>
       <% }) %>
     <% } %>  
   </body>
