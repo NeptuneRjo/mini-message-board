@@ -6,10 +6,12 @@
 	</head>
 	<body>
 		<%- include('./partials/nav.ejs') %> 
-		<form method="POST" action="/new">
-			<input placeholder="message" name="messageText" id="messageText" />
-			<input placeholder="user" name="messageUser" id="messageUser" />
-			<button>Submit</button>
-		</form>
+		<div class="form">
+			<form method="POST" action="/new">
+				<input placeholder="message" name="messageText" id="messageText" />
+				<input placeholder="user" name="messageUser" id="messageUser" />
+				<button>Submit</button>
+			</form>
+		</div>
 	</body>
 </html>
